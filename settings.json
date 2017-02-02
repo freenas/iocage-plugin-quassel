@@ -48,11 +48,11 @@
 			"name": "SSL Options",
 			"description": "SSL Connection Options",
 			"requirerestart": true,
-			"options": [
-				"tlsrequire": "Require TLS",
-				"tlsallow": "Allow TLS",
-				"tlsdisable": "Disable TLS"
-			]
+			"options": {
+					"tlsrequire": "Require TLS",
+					"tlsallow": "Allow TLS",
+					"tlsdisable": "Disable TLS"
+			}
 		},
 		"deluser": {
 			"type": "delete",
