@@ -13,7 +13,7 @@ mkdir -p /var/db/quasselcore
 chown quasselcore:quasselcore /var/db/quasselcore
 
 # Gen the SSL key
-printf "\n\n\n\n\n\n\n\n\n\n" | /usr/local/etc/rc.d/quasselcore onekeygen 2>&1 /dev/null
+printf "\n\n\n\n\n\n\n\n\n\n" | /usr/local/etc/rc.d/quasselcore onekeygen 2>/dev/null >/dev/null
 
 # Start the service
-service quasselcore start 2>&1/dev/null
+service quasselcore start 2>/dev/null >/dev/null
