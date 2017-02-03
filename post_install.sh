@@ -16,4 +16,6 @@ chown quasselcore:quasselcore /var/db/quasselcore
 printf "\n\n\n\n\n\n\n\n\n\n" | /usr/local/etc/rc.d/quasselcore onekeygen 2>/dev/null >/dev/null
 
 # Start the service
-service quasselcore start 2>/dev/null >/dev/null
+if $(service quasselcore start 2>/dev/null >/dev/null) ; then
+    echo "Starting quasselcore."
+fi
