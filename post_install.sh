@@ -16,4 +16,4 @@ chown quasselcore:quasselcore /var/db/quasselcore
 printf "\n\n\n\n\n\n\n\n\n\n" | /usr/local/etc/rc.d/quasselcore onekeygen
 
 # Start the service
-service quasselcore start
+service quasselcore start 2>/dev/null
