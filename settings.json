@@ -40,6 +40,7 @@
 			"type": "bool",
 			"name": "SSL Only",
 			"description": "Only accept SSL connections",
+			"default": true,
 			"requirerestart": true
 			
 		},	
@@ -48,6 +49,7 @@
 			"name": "SSL Options",
 			"description": "SSL Connection Options",
 			"requirerestart": true,
+			"default": "tlsallow",
 			"options": {
 					"tlsrequire": "Require TLS",
 					"tlsallow": "Allow TLS",
